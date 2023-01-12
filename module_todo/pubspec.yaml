@@ -1,0 +1,39 @@
+name: module_todo
+description: A new Flutter module project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  module_commons:
+    path: '../module_commons'
+
+  module_assets:
+    path: '../module_assets'
+
+  module_external_dependencies:
+    path: '../module_external_dependencies'
+
+  module_core:
+    path: '../module_core'
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  module:
+    androidX: true
+    androidPackage: com.example.module_todo
+    iosBundleIdentifier: com.example.moduleTodo
