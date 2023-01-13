@@ -34,6 +34,7 @@ class _AddTodoPageState extends State<AddTodoPage> {
                           child: Text(TranslateTodo.strings.taskTitle).h4Bold(color: TodoAppColors.monoBlack))),
                   SliverToBoxAdapter(child: TodoTextFieldWidget(controller: state.taskTitleController))
                 ])),
-            bottomNavigationBar: TodoAddTodoButtonWidget(taskTitleIsNotEmpty: state.taskTitleIsNotEmpty)));
+            bottomNavigationBar:
+                TodoAddTodoButtonWidget(taskTitleIsNotEmpty: state.taskTitleIsNotEmpty, addTodo: _store.addTodo)));
   }
 }
