@@ -26,9 +26,9 @@ class TodoAddTodoButtonWidget extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                   color: TodoAppColors.darkSecondary.withOpacity(TodoAppOpacity.half),
-                  blurRadius: TodoAppDimens.atto,
-                  spreadRadius: TodoAppDimens.atto,
-                  offset: const Offset(TodoAppDimens.atto, TodoAppDimens.atto))
+                  blurRadius: TodoAppDimens.xatto,
+                  spreadRadius: TodoAppDimens.xatto,
+                  offset: const Offset(TodoAppDimens.xatto, TodoAppDimens.xatto))
             ]),
         child: Text(TranslateTodo.strings.add).labelMediumBold(color: TodoAppColors.monoBlack));
   }

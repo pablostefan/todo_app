@@ -11,11 +11,20 @@ class TodoHomeStore extends TodoAppStateX<TodoHomeViewModel> {
 
   @override
   void init() {
+    _getAllTodos();
     state.searchController.addListener(_onChangeSearch);
     super.init();
   }
 
-  void _getAllTodos() {}
+  void _getAllTodos() async {
+    var response = await todoRepository.getAll();
+    response.fold((error) => null, _getAllTodosSuccess);
+  }
+
+  void _getAllTodosSuccess(List<TodoModel> todos) {
+    state.todos = todos;
+    executeState(state);
+  }
 
   void _onChangeSearch() {}
 
