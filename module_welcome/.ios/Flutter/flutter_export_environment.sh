@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/opt/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/krykto/Documents/todo_app/module_welcome"
+export "FLUTTER_APPLICATION_PATH=/Users/krykto/Documents/GitHub/todo_app/module_welcome"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
